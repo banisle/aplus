@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../img/common/favicon.ico" rel="shrtcut icon">
+	<link href="../../img/common/favicon-152.png" rel="apple-touch-icon-precomposed">
+    <title>A+ 에셋</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../lib/slick.css">
+    <link rel="stylesheet" href="../../lib/slick-theme.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../lib/slick.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+</head>
+<body>
+    <div class="container pc">
+        <div class="sideMenu">
+            <img src="../../img/pc_toputil_active.jpg" alt="">
+        </div>
+        <div class="top_util">
+            <img src="../../img/pc_toputil.png" alt="top util">
+            <img src="../../img/pc_toputil_gnb_active.jpg" class="menu_txt" alt="">
+            <button type="button" class="smenu"></button>
+        </div>
+        <div class="kvWrap">
+            <div class="slider kv">
+                <div><img src="../../img/pc_top_v1.jpg" alt="01"></div>
+                <div><img src="../../img/pc_top_v2.jpg" alt="01"></div>
+                <div><img src="../../img/pc_top_v3.jpg" alt="01"></div>
+                <div><img src="../../img/pc_top_v4.jpg" alt="01"></div>
+            </div>
+        </div>
+        <div class="shopWrap">
+            <div class="slider shop">
+                <div><img src="../../img/pc_shop_v1.jpg" alt="01"></div>
+                <div><img src="../../img/pc_shop_v2.jpg" alt="01"></div>
+                <div><img src="../../img/pc_shop_v3.jpg" alt="01"></div>
+                <div><img src="../../img/pc_shop_v4.jpg" alt="01"></div>
+            </div>
+        </div>
+        <div class="btWrap">
+            <a href="pcDemo_s01.html"><img src="../../img/pc_link.jpg" alt=""></a>
+        </div>
+        <div class="btWrap">
+            <img src="../../img/pc_bt.jpg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+
+    $('.slider.kv').slick({
+        infinite: true,
+        slidesToShow: 1,
+        autoplay: true,
+        dots:true,
+        arrows: false,
+        fade: true,
+        autoplaySpeed: 2000,
+        pauseOnHover:false
+    });
+    $('.slider.shop').slick({
+        infinite: true,
+        slidesToShow: 3,
+        // centerMode: true,
+        // centerPadding: '0px',
+        autoplay: false,
+        dots:true,
+        arrows: false,
+        // variableWidth: true
+    });
+
+    $('.top_util .smenu').on('click',function(){
+        $('.container.pc').toggleClass('active');
+    });
+    
+   
+</script>

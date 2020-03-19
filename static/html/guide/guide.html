@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>가이드 </title>
+
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../js/TNUI.js"></script>
+    <script src="../../js/guide.js"></script><!-- 개발자전달 : 실개발시 import 하지 않습니다 -->
+    <script src="../../js/common.js"></script>
+    
+    <style>
+        .guidewrap {
+            width: 1280px;
+            margin: 0 auto;
+            line-height: 1.6
+
+        }
+
+        .guideTit {
+            padding: 35px 0 0
+        }
+
+        .guideTit>strong {
+            display: block;
+            padding: 0 0 15px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+        }
+
+        .sub_tit {
+            display: block;
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guidewrap">
+        <div class="guideTit">
+            <strong>브라우저 지원</strong>
+            <p>
+                ie 10이상, 크롬 최신버전
+            </p>
+        </div>
+
+        <div class="guideTit">
+            <strong>경로</strong>
+            <p>
+                css내부, html상의 link경로 <strong>'상대경로'</strong>로 할 것
+            </p>
+        </div>
+
+        <div class="guideTit">
+            <strong>font</strong>
+            <p class="fw-l">NotoKrL, class: fw-l , font-weight: 100</p>
+            <p class="fw-r">NotoKrR, class: fw-r , font-weight: 300</p>
+            <p class="fw-m">NotoKrM, class: fw-m , font-weight: 500</p>
+            <p class="fw-b">NotoKrB, class: fw-b , font-weight: 700</p>
+
+            <p class="ft-num fw-l">jost l 012345, class: ft-num fw-l</p>
+            <p class="ft-num fw-m">jost m 012345, class: ft-num fw-m</p>
+            <p class="ft-num fw-b">jost b 012345, class: ft-num fw-b</p>
+
+        </div>
+
+        <div class="guideTit">
+            <strong>버튼</strong>
+            <p><strong class="sub_tit">주 버튼, 모바일에서 단일버튼 사이즈 100% mOne 클래스 추가</strong></p>
+            <div class="btn_wrap">
+                <button type="button" class="btn_org btn_ok"><span>btn_org btn_ok</span></button>
+                <button type="button" class="btn_org btn_ok" disabled><span>확인 disabled</span></button>
+                <button type="button" class="btn_org btn_no"><span>btn_org btn_no</span></button>
+                <button type="button" class="btn_org btn_no" disabled><span>취소 disabled</span></button>
+                <button type="button" class="btn_org btn_ep mOne"><span>btn_org btn_ep mOne</span></button>
+            </div>
+            <p><strong class="sub_tit">사이즈별 버튼</strong></p>
+            <div class="btn_wrap">
+                <button type="button" class="btn_org btn_ok lg" ><span>lg</span></button>
+                <button type="button" class="btn_org btn_ok md free_width" ><span>btn_org btn_ok md</span></button>
+                <button type="button" class="btn_org btn_ok sm free_width" ><span>btn_org btn_ok sm free_width</span></button>
+                <button type="button" class="btn_org btn_ok xs free_width" ><span>btn_org btn_ok xs free_width</span></button>
+            </div>
+            <p><strong class="sub_tit">회원가입등 2개 버튼</strong></p>
+            <div style="width:656px">
+                <div class="btn_wrap row-2">
+                    <span><button type="button" class="btn_org btn_no"><span>취소</span></button></span>
+                    <span><button type="button" class="btn_org btn_ok"><span>가입하기</span></button></span>
+                </div>
+            </div>
+            <p><strong class="sub_tit">레이어 팝업 버튼</strong></p>
+            <div class="btn_wrap">
+                <button type="button" class="btn_org ly_btn_no mvClose"><span>취소</span></button>
+                <button type="button" class="btn_org ly_btn_ok mvClose"><span>확인</span></button>
+            </div>
+        </div>
+
+        <div class="guideTit">
+            <strong>chk</strong>
+            <span>
+                <input type="checkbox" id="chk-cate01" class="form_chk af_chk">
+                <label for="chk-cate01"><span class="label-txt"><strong>form_chk af_chk</strong></span></label>
+            </span>
+            <br />
+            <span>
+                <input type="checkbox" id="chk-on2" class="form_chk">
+                <label for="chk-on2"><span class="label-txt">form_chk <sub>(필수)</sub></span></label>
+            </span>
+        </div>
+
+        <div class="guideTit">
+            <strong>radio</strong>
+            <span>
+                <input type="radio" id="rad-cate01" class="form_radio af_rad" name="radio_grp">
+                <label for="rad-cate01"><span class="label-txt"><strong>라디오1</strong></span></label>
+            </span><br />
+            <span>
+                <input type="radio" id="rad-on2" class="form_radio" name="radio_grp">
+                <label for="rad-on2"><span class="label-txt">라디오2 </span></label>
+            </span>
+            <div>
+                    <input type="radio" id="man" class="form_radio_tab" name="radio_gender" checked>
+                    <label for="man"><span class="label-txt">남자</span></label>
+                    <input type="radio" id="woman" class="form_radio_tab" name="radio_gender">
+                    <label for="woman"><span class="label-txt">여자</span></label>
+            </div>
+        </div>
+
+        <div class="guideTit" style="width:656px;margin:0 auto;">
+            <strong>input 입력 전</strong>
+            <div style="padding-bottom:20px">
+                <span class="inp_wrap">
+                    <input type="text" placeholder="000-0000-0000">
+                </span>
+            </div>
+            <strong>input 입력 후 : input태그에 class="active" 추가</strong>
+            <div class="form_wrap">
+                <span class="inp_wrap has_btn">
+                    <input type="text" placeholder="아이디 (이메일 주소)를 입력해주세요." maxlength="15" class="active" value="stayjungle@stayjungle.co.kr">
+                    <span class="inp_btn"><button type="button" class="btn_org btn_mid md btn_no"><span>중복확인</span></button></span>
+                </span>
+                <!-- 에러 툴팁 -->
+                <div class="tooltip" style="display:block">Caps lock이 켜져 있습니다.</div>
+            </div>
+            <div class="form_grp" style="padding-top:20px">
+                <div class="form_wrap">
+                    <label for=""><span>비밀번호</span></label>
+                    <!-- 개발 전달 : 성공시 active 추가 -->
+                    <span class="inp_wrap has_pass active ">
+                        <input type="password" value="password" class="active">
+                    </span>
+                    <span class="sub">인풋 하단 문구</span>
+                    <span class="sub error" style="display:block">인풋 하단 문구 에러</span>
+                    <span class="sub confirm" style="display:block">인풋 하단 문구 성공</span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="guideTit">
+            <strong>select</strong>
+            <div class="selWrap">
+                <div class="selectWrap ui-selectbox sel_org">
+                    <select title="test" id="filter">
+                        <option>카테고리 선택</option>
+                    </select>
+                </div>
+            </div>
+            <p><strong class="sub_tit">패밀리사이트, 상단 검색 사용시</strong></p>
+            <div class="selWrap org">
+                <div class="selectWrap ui-selectbox ">
+                    <select title="test" id="filter2">
+                        <option>카테고리 선택</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="guideTit">
+            <strong>paging</strong>
+            <!-- (sta) pagination -->
+            <div class="pagewrap">
+                <span class="pagination">
+                    <a href="" class="prev"><span class="hidden">이전 10개</span></a>
+                    <!-- 활성화 active 클래스 -->
+                    <a href="" class="num active"><span>1</span></a>
+                    <a href="" class="num"><span>2</span></a>
+                    <a href="" class="num"><span>3</span></a>
+                    <a href="" class="num"><span>4</span></a>
+                    <a href="" class="num"><span>5</span></a>
+                    <a href="" class="num"><span>6</span></a>
+                    <a href="" class="num"><span>7</span></a>
+                    <a href="" class="num"><span>8</span></a>
+                    <a href="" class="num"><span>9</span></a>
+                    <a href="" class="num"><span>10</span></a>
+                    <a href="" class="next"><span class="hidden">다음 10개</span></a>
+                </span>
+            </div>
+            <!-- (end) pagination -->
+        </div>
+
+        <div class="guideTit">
+            <strong>tab</strong>
+            <div class="tab_list row-4">
+                <ul>
+                    <li><a href="#t01"><span>상세정보</span></a></li>
+                    <li><a href="#t02"><span>테스트정보</span></a></li>
+                    <li><a href="#t03"><span>가격정책</span></a></li>
+                    <li><a href="#t04"><span>제약 및 취소환불 규정</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="guideTit">
+            <strong>table</strong>
+            <div class="board_list">
+                <table>
+                    <caption class="hidden">공지사항 번호, 구분, 제목 등록일</caption>
+                    <colgroup>
+                        <col width="84px">
+                        <col width="104px">
+                        <col width="">
+                        <col width="126px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span>번호</span></th>
+                            <th scope="col"><span>구분</span></th>
+                            <th scope="col"><span>제목</span></th>
+                            <th scope="col"><span>등록일</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- .noti 공지사항 클래스 -->
+                            <td><span>10</span></td>
+                            <td><span>분류1</span></td>
+                            <td><a href=""><span>[Best Buyer] 빅데이터에서 교통패턴을 읽다 ‘OOOOO앱’</span></a></td>
+                            <td><span>2019-12-10</span></td>
+                        </tr>
+
+                        <!-- (sta) 개발전달 : 검색데이터 없음 -->
+                        <tr class="no-data">
+                            <td colspan="4">
+                                <span><strong>‘Adsfow’</strong> 에 대한 공지사항 내 검색 결과가 없습니다.</span>
+                            </td>
+                        </tr>
+                        <!-- (end) 개발전달 : 검색데이터 없음 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="board_list type_view">
+                <table>
+                    <caption class="hidden">공지사항 구분, 제목 등록일</caption>
+                    <colgroup>
+                        <col width="84px">
+                        <col width="">
+                        <col width="135px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><span>공지</span></th>
+                            <th scope="col"><span>$$$$$$$$$$$$$$$$$$제목$$$$$$$$$$$$$$$$$</span></th>
+                            <th scope="col"><span>YYYY-MM-DD</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="view_txt_wrap">
+                            <td colspan="4">
+                                텍스트 내용
+                            </td>
+                        </tr>
+                        <tr class="addfile_wrap">
+                            <th scope="row"><span class="icn_addfile">첨부파일</span></th>
+                            <td class="f_name" colspan="3"><a href=""><span>파일명.XXX</span></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="guideTit">
+            <strong>modal</strong>
+            <span><button type="button" class="btn_org btn_ok " data-modal="modal01"><span>모달 호출</span></button></span>
+            <!-- 모달 -->
+            <div class="laypop" id="" data-target="modal01">
+                <div class="wrap-modal">
+                    <article class="inner">
+                        <a href="#" class="btntop_close mvClose"><span class="hidden">닫기</span></a>
+                        <div class="laypop_content join_complete">
+                            <strong>회원가입이 완료되었습니다.</strong>
+                            <p class="modal_txt">로그인 화면으로 이동합니다.<br>로그인하셔서 서비스를 이용해주세요.</p>
+                        </div>
+                        <footer class="laypop_footer">
+                            <!-- 개발자 전달 : 버튼 클릭시 로그인페이지로 이동 안할경우 a태그에 mvClose태그 추가해야 모달 닫기 -->
+                            <div class="btn_wrap tc modal-2">
+                                <span><a href="#040" class="btn_org ly_btn_ok mvClose"><span>확인</span></a></span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+            <!-- //모달 -->
+        </div>
+
+        <div class="guideTit">
+            <strong>ul</strong>
+            <ul class="bu01">
+                <li>test1</li>
+                <li>test1</li>
+                <li>test1</li>
+                <li>test1</li>
+            </ul>
+        </div>
+        
+        <div class="guideTit">
+            <strong>icon</strong>
+            <div class="sns_link">
+                <span><a href="" target="_blank" class="n_login"><span class="hidden">네이버 로그인</span></a></span>
+                <span><a href="" target="_blank" class="g_login"><span class="hidden">구글 로그인</span></a></span>
+                <span><a href="" target="_blank" class="k_login"><span class="hidden">카카오톡 로그인</span></a></span>
+            </div>
+        </div>
+
+        <div class="guideTit">
+            <strong>footer</strong>
+           <footer>
+
+           </footer>
+        </div>
+
+    </div>
+
+
+    <!-- 페이지 호출 스크립트 -->
+    <script>
+        $(document).ready(function () {
+            // modalUI 인자값 dim부분 클릭시 창 닫기 기능 true/false
+            TNUI.module.modalUi(true);
+            TNUI.module.selectUi();
+        });
+    </script>
+</body>
+
+</html>
